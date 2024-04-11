@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import marketme from './img/marketme.svg'
-import rocket from './img/rocket.svg'
-import strategy from './img/Strategy.svg'
+import marketme from '../img/marketme.svg'
+import rocket from '../img/rocket.svg'
+import strategy from '../img/Strategy.svg'
 
 const Sidebar = () => {
     const [active, setActive] = useState(false)
@@ -40,7 +40,7 @@ const Sidebar = () => {
             <div className="position-absolute menubar_parent px-3">
                 <i className="menubar ri-menu-line ri-lg text-dark" onClick={() => setActive(!active)}></i>
             </div>
-            <div>
+            <div className='px-4'>
                 <img src={!active ? marketme : rocket} alt="" width={active ? 35 : 190} height={40} class="px-1"/>
             </div>
             <div className="mt-4 p-0">
@@ -62,7 +62,7 @@ const Sidebar = () => {
                         </li>
                     })}
                 </ul>
-                <h6 className="my-3 help px-4">Help</h6>
+                <h6 className={`my-3 help px-4`}>Help</h6>
                 <ul type="none" className=" list-group">
                     {data1.map((item, index) => {
                         return <li className=" d-flex gap-3 py-2 px-4 rounded-2 align-items-center">
