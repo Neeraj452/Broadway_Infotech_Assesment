@@ -1,0 +1,78 @@
+main {
+  background: #f5f6f7;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.sidebar {
+  width: 420px;
+  background: #08014c;
+  transition: all linear 0.3s;
+}
+
+.active {
+  width: 60px;
+}
+
+.menubar_parent {
+  top: 13px;
+  right: -50px;
+}
+
+.top_up {
+  background: #ff7b1b;
+}
+
+.menubar {
+  cursor: pointer;
+}
+
+.sidebar ul li {
+  cursor: pointer;
+}
+
+.sidebar ul li:hover {
+  background: #4731d3;
+  color: #eba179;
+}
+.selected{
+  background: #4731d3;
+  color: #eba179;
+
+}
+
+header {
+  padding: 0 100px;
+}
+.input{
+  position: relative;
+}
+.input-icon{
+  position: absolute;
+  top: 17%;
+  right: 5%;
+}
+
+.parent {
+  width: 90%;
+  margin: 0 auto;
+  
+}
+.box-parent{
+  overflow-x: hidden;
+}
+
+.card {
+  width: 220px;
+}
+.custom-bg {
+  margin-bottom: 10px;
+}
+.table thead{
+  --bs-table-bg:rgb(253 246 223)
+}
+.table tbody{
+  --bs-table-bg:#fff
+}
+.filter{
+  width: 250px;
+}
